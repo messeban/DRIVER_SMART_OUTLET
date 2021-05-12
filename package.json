@@ -1,0 +1,25 @@
+{
+  "name": "driver_smart_outlet",
+  "version": "1.0.0",
+  "description": "Driver for the smart outlet",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smart",
+    "outlet",
+    "driver"
+  ],
+  "author": "Mourad Essebane",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mqtt": "^4.2.6",
+    "nodemon": "^2.0.7",
+    "onoff": "^6.0.3"
+  }
+}
