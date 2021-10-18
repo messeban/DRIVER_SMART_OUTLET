@@ -18,10 +18,10 @@ client.on('connect', function () {
  
 client.on('message', function (topic, message) {
   // message is Buffer
-  const buffer = JSON.stringify(message.toString());
-  const buffer2 = JSON.parse(buffer);
-  const buffer3 = JSON.parse(buffer2);
-  if(buffer3.isConnected){
+  const buffer = JSON.stringify(JSON.parse(JSON.parse(message.toString())));
+  //const buffer2 = JSON.parse(buffer);
+  //const buffer3 = JSON.parse(buffer2);
+  if(buffer.isConnected){
     greenLED.writeSync(1);
     redLED.writeSync(0);
 }
